@@ -9,7 +9,7 @@ import java.util.Stack;
 
 public class VansSortLite {
     public static void main(String[] args) throws IOException {
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         int quantity = Integer.parseInt(r.readLine());
         String[] vansLine = r.readLine().split(" ");
         Stack<Integer> stack = new Stack<>();

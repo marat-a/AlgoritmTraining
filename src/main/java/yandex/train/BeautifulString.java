@@ -9,13 +9,13 @@ import java.util.Map;
 
 public class BeautifulString {
     public static void main(String[] args) throws Exception {
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         final int k = Integer.parseInt(r.readLine());
         final char[] string = r.readLine().toCharArray();
         Map<Character, Integer> charMap = new HashMap<>();
         int maxValue = 0;
-        for (int i = 0; i < string.length; i++) {
-            charMap.putIfAbsent(string[i], 0);
+        for (char c : string) {
+            charMap.putIfAbsent(c, 0);
         }
         int leftReplaces;
         int leftPosition;

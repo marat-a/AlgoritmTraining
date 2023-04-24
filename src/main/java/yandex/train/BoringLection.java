@@ -7,11 +7,11 @@ import java.util.TreeMap;
 
 public class BoringLection {
     public static void main(String[] args) throws IOException {
-        final BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        final BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         String s = r.readLine();
 
         Map<Character, Long> map = new HashMap<>();
-        Long length = (long) s.length();
+        long length = (long) s.length();
 
         for (int i = 0; i < length; i++) {
             Long sum = (length - i) * (i + 1);

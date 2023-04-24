@@ -6,7 +6,7 @@ import java.util.*;
 public class MinTriangle {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         int n = Integer.parseInt(reader.readLine());
         String[] input = reader.readLine().split(" ");
         int[] prices = new int[n];

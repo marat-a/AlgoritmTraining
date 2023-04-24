@@ -11,7 +11,7 @@ public class Histogram {
 
         TreeMap<Character, Integer> charMap = new TreeMap<>();
 
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         String line;
         while ((line = r.readLine()) != null) {
             char[] charAtLine = line.toCharArray();

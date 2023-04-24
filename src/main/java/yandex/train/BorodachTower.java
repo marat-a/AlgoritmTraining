@@ -6,7 +6,7 @@ import java.util.List;
 
 public class BorodachTower {
     public static void main(String[] args) throws Exception {
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
 
         String[] NAndM = r.readLine().split(" ");
         int platforms = Integer.parseInt(NAndM[0]);
@@ -37,8 +37,8 @@ public class BorodachTower {
         int result = 0;
         int volIndex = 0;
         while (volIndex < volunteers) {
-            for (int i = 0; i < platformUnderSunWidths.size(); i++) {
-                if (volunteersWidth[volIndex] <= platformUnderSunWidths.get(i)) {
+            for (Long platformUnderSunWidth : platformUnderSunWidths) {
+                if (volunteersWidth[volIndex] <= platformUnderSunWidth) {
                     result++;
                 }
                 volIndex++;

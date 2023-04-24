@@ -7,7 +7,7 @@ import java.io.FileReader;
 
 public class ControlWork {
     public static void main(String[] args) throws Exception {
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         int pupils = Integer.parseInt(r.readLine());
         int variants = Integer.parseInt(r.readLine());
         int petyaRow = Integer.parseInt(r.readLine());

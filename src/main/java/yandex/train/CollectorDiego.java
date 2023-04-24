@@ -9,13 +9,13 @@ import java.util.TreeSet;
 
 public class CollectorDiego {
     public static void main(String[] args) throws Exception {
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         int quantity = Integer.parseInt(r.readLine());
         String[] numbersOfStickers = r.readLine().split(" ");
         TreeSet<Integer> treeSet = new TreeSet<>();
         treeSet.add(-1);
-        for (int i = 0; i < numbersOfStickers.length; i++) {
-            treeSet.add(Integer.parseInt(numbersOfStickers[i]));
+        for (String numbersOfSticker : numbersOfStickers) {
+            treeSet.add(Integer.parseInt(numbersOfSticker));
         }
         ArrayList<Integer> numbersOfDiegoStickers = new ArrayList<>(quantity);
         numbersOfDiegoStickers.addAll(treeSet);

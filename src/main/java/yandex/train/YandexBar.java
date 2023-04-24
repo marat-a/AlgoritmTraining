@@ -5,10 +5,9 @@ import java.util.regex.Matcher;
 
 public class YandexBar {
     public static void main(String[] args) throws Exception {
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         String[] NAndM = r.readLine().split(" ");
         int n = Integer.parseInt(NAndM[0]);
-        int m = Integer.parseInt(NAndM[1]);
         ArrayList<String> glass = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             String layer = r.readLine();

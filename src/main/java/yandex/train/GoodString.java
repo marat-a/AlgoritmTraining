@@ -9,7 +9,7 @@ import java.util.List;
 
 public class GoodString {
     public static void main(String[] args) throws Exception {
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         final int allLettersQuantity = Integer.parseInt(r.readLine());
         List<Integer> charMap = new ArrayList<>();
         long total = 0;

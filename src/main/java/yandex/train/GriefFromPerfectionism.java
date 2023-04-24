@@ -20,7 +20,7 @@ class Sculpture {
 
 public class GriefFromPerfectionism {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         String[] first = reader.readLine().split(" ");
         String[] sculptures = reader.readLine().split(" ");
         int quantity = Integer.parseInt(first[0]);
@@ -32,10 +32,10 @@ public class GriefFromPerfectionism {
         }
         sculpts.sort(Comparator.comparing(p -> p.weight));
         ArrayList<Integer> result = new ArrayList<>();
-        for (int i = 0; i < sculpts.size(); i++) {
-            if (minutes >= sculpts.get(i).weight) {
-                minutes -= sculpts.get(i).weight;
-                result.add(sculpts.get(i).index);
+        for (Sculpture sculpt : sculpts) {
+            if (minutes >= sculpt.weight) {
+                minutes -= sculpt.weight;
+                result.add(sculpt.index);
             } else return;
         }
         result.sort(null);

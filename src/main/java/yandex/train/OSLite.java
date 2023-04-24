@@ -9,7 +9,7 @@ public class OSLite {
         int workingOS = 0;
         int osQuantity;
 
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         r.readLine();
         osQuantity = Integer.parseInt(r.readLine());
         if (osQuantity == 0) {

@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class SNTP {
     public static void main(String[] args) throws IOException {
-        BufferedReader r = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader r = new BufferedReader(new FileReader("src/main/java/yandex/input.txt"));
         String[] timeAString = r.readLine().split(":");
         String[] timeBString = r.readLine().split(":");
         String[] timeCString = r.readLine().split(":");

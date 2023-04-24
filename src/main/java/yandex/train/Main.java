@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+import java.util.Deque;
 
 public class Main{
     public static void main(String[] args) throws IOException{
@@ -36,16 +37,14 @@ public class Main{
 
         while(left < right){
             int mid = (left + right) / 2;
-            int l = stack.toArray(new Integer[0])[mid];
-            int c0 = mid;
             int c1 = stack.size() - mid - 1;
-            if(c0 > c1){
+            if(mid > c1){
                 if(s.charAt(r - 1) == '0'){
                     right = mid;
                 } else{
                     left = mid + 1;
                 }
-            } else if(c0 < c1){
+            } else if(mid < c1){
                 if(s.charAt(r - 1) == '1'){
                     right = mid;
                 } else{
